@@ -8,7 +8,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
@@ -37,10 +37,14 @@ session_start();
     </header>
     <main>
         <div class="page">
+            <h1 id='side1'>Forside</h1>
             <div class="page1">
-                <h1 id='side1'>Forside</h1>
-                    
+                <div id="text">
+                    <h1>Halløj, Jeg er Mie Jarner</h1>
+                    <br>
+                    <p>fang mig her</p>
                 </div>
+                <img src="./assets/download.png" alt="" id="frontimg">
             </div>
         </div>
         <div class="page">

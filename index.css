@@ -8,7 +8,7 @@
 }
 
 h1{
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid black;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
 
 
 header{
-    background-color: pink;
+    background-color: lightgray;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -32,10 +32,10 @@ header{
 }
 
 main{
-    height: 85vh;
+    height: 100%;
     display: grid;
     grid-auto-flow: column;
-    overflow: scroll;
+    overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     background-color: whitesmoke;
@@ -45,17 +45,19 @@ main{
     width: 100vw;
     /*place-items: center;*/
     scroll-snap-align: center;
-    padding: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    background-color: white;
+    background-image: url("./assets/17931367.jpg");
+    background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .menu{
     display: grid;
     place-items: center;
-    color: white;
-    border: 1px solid white;
+    color: Black;
+    border: 1px solid lightgray;
     border-radius: 0.5rem;
     height: 7vh;
 }
@@ -63,27 +65,9 @@ main{
 footer{
     display: grid;
     place-items: center;
-    background-color: pink;
-    color: white;
+    background-color: lightgray;
+    color: black;
 }
-
-img {
-    max-width: 200px;
-    width: 100%; /* ændrer bredden til 100% af containerens bredde */
-    height: auto; /* ændrer højden automatisk */
-    border-radius: 50%; /* gør billedet til et rundt billede*/
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0px 0px 10px #333; /* tilføjer en 10px bred sort skygge */
-    border: 2px solid #333; /* tilføjer en 2px bred sort ramme */
-    transition: transform 1s; /* tilføjer en 1s transition til transform */
-    margin-top: 2rem;
-  }
-
-  img:hover {
-    transform: rotate(360deg); /* roter billedet 360 grader ved hover*/
-}
-
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -115,17 +99,23 @@ p{
 }
 
 .page3{
-    color: pink;
+    color: white;
     display: grid;
     place-items: center;
-
+}
+.page1{
+    height: 100%;
+    width: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   place-items: center;
 }
 
+#frontimg{
+    height: 25rem;
+    width: 25rem;
+}
 
 a:link{
-    color: pink;
-}
-
-#rapporter{
-    background-color: green;
+    color: white;
 }
